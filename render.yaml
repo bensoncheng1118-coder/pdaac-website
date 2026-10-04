@@ -1,0 +1,14 @@
+# Render 靜態網站設定（New → Blueprint 會自動讀取）
+services:
+  - type: web
+    name: pdaac-website
+    runtime: static
+    buildCommand: echo "no build needed"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /images/*
+        name: Cache-Control
+        value: public, max-age=604800

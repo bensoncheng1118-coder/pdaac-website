@@ -1,0 +1,7 @@
+# 安裝檔太大（約 87 MB），不要放進 GitHub 倉庫，請放到 Releases
+*.exe
+*.blockmap
+*.zip
+Thumbs.db
+desktop.ini
+.DS_Store
